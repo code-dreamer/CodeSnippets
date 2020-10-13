@@ -1,0 +1,8 @@
+#pragma once
+
+namespace StrUtils {
+;
+CString AnsiToString(const char* str);
+CString FormatString(_In_z_ _Printf_format_string_ wchar_t* pszFormat, ...);
+
+} // namespace StrUtils
