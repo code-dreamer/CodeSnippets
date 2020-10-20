@@ -9,6 +9,12 @@
 
 #include "targetver.h"
 
-#include <Windows.h>
+// conflicts with std::numeric_limits<>::max
+#define NOMINMAX
+
+#define WIN32_LEAN_AND_MEAN             // Exclude rarely-used stuff from Windows headers
+#ifndef _INC_WINDOWS
+	#include <Windows.h>
+#endif
 
 #pragma warning(pop)
